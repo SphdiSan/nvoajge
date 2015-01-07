@@ -32,19 +32,25 @@
         // Weibo
         function registerHandlerForSinaWeiboContent()
         {
-            return "{\"content\":\"Your Content\", \"icon\":\"http://GameIconLink\", \"link\":\"http://YourLink\"}";
+            var content = { "description": window.shareData.tContent, "icon": window.shareData.imgUrl, "link": window.shareData.timeLineLink};
+            var json = JSON.stringify(content);
+            return json;
         }
     
         // Facebook
         function registerHandlerForFacebookShareContent()
         {
-            return "{\"content\":\"Your Content\", \"link\":\"http://YourLink\"}";
+            var content = { "description": window.shareData.tContent, "icon": window.shareData.imgUrl, "link": window.shareData.timeLineLink};
+            var json = JSON.stringify(content);
+            return json;
         }
         
         // Twitter
         function registerHandlerForTwitterShareContent()
         {
-            return "{\"content\":\"Your Content\", \"link\":\"http://YourLink\"}";
+            var content = { "description": window.shareData.tContent, "icon": window.shareData.imgUrl, "link": window.shareData.timeLineLink};
+            var json = JSON.stringify(content);
+            return json;
         }
     </script>
     <script type="text/javascript">
