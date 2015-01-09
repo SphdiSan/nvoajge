@@ -24,37 +24,33 @@
         // Weixin
         function registerHandlerForWeixinShareContent()
         {
-            var content = { "title": window.shareData.tTitle, "description": window.shareData.tContent, "icon": window.shareData.imgUrl, "link": window.shareData.timeLineLink};
+            var content = { "title": "", "description": "", "icon": "", "link": ""};
             var json = JSON.stringify(content);
             return json;
         }
-    
         // Weibo
         function registerHandlerForSinaWeiboContent()
         {
-            var content = { "description": window.shareData.tContent, "icon": window.shareData.imgUrl, "link": window.shareData.timeLineLink};
+            var content = { "description": "", "icon": "", "link": ""};
             var json = JSON.stringify(content);
             return json;
         }
-    
         // Facebook
         function registerHandlerForFacebookShareContent()
         {
-            var content = { "description": window.shareData.tContent, "icon": window.shareData.imgUrl, "link": window.shareData.timeLineLink};
+            var content = { "description": "", "icon": "", "link": ""};
             var json = JSON.stringify(content);
             return json;
         }
-        
         // Twitter
         function registerHandlerForTwitterShareContent()
         {
-            var content = { "description": window.shareData.tContent, "icon": window.shareData.imgUrl, "link": window.shareData.timeLineLink};
+            var content = { "description": "", "icon": "", "link": ""};
             var json = JSON.stringify(content);
             return json;
         }
     </script>
     <script type="text/javascript">
-
 
     function didLoad() {
                         if(navigator.userAgent.indexOf("WeGame/0.2.0") !=-1)
